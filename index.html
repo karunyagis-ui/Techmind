@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMind | Ultimate Technology Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+</div>
+
+<header>
+    <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <div>
+            <strong>TECHMIND</strong>
+            <small>ULTIMATE TECHNOLOGY CHALLENGE</small>
+        </div>
+    </div>
+
+    <div class="header-badge">
+        🧠 HARD MODE
+    </div>
+</header>
+
+<main>
+
+    <!-- INTRO -->
+    <section id="intro" class="intro-card">
+
+        <div class="rocket">🚀</div>
+
+        <p class="eyebrow">THE ULTIMATE CHALLENGE</p>
+
+        <h1>50 Questions.<br>
+            <span>One Technology Master.</span>
+        </h1>
+
+        <p class="intro-text">
+            Test your knowledge across Artificial Intelligence, Cybersecurity,
+            Cloud Computing, Programming, Databases, Networking, DevOps,
+            Blockchain and Computer Science.
+        </p>
+
+        <div class="challenge-info">
+            <div>
+                <b>50</b>
+                <span>Questions</span>
+            </div>
+
+            <div>
+                <b>30s</b>
+                <span>Per Question</span>
+            </div>
+
+            <div>
+                <b>Hard</b>
+                <span>Difficulty</span>
+            </div>
+        </div>
+
+        <button id="startBtn" class="primary-btn">
+            START CHALLENGE 🚀
+        </button>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quizSection" class="hidden">
+
+        <div class="quiz-top">
+
+            <div>
+                <span class="mini-label">CURRENT QUESTION</span>
+                <h2 id="questionNumber">01 / 50</h2>
+            </div>
+
+            <div id="timerBox" class="timer-box">
+                <span>⏱</span>
+                <strong id="timer">30</strong>
+                <small>SEC</small>
+            </div>
+
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-info">
+                <span>YOUR PROGRESS</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+
+
+        <div class="question-card">
+
+            <div class="question-meta">
+                <span id="category">ARTIFICIAL INTELLIGENCE</span>
+                <span id="difficulty">VERY HARD</span>
+            </div>
+
+            <h1 id="question">
+                Question loading...
+            </h1>
+
+            <div id="answers" class="answers"></div>
+
+            <div id="feedback" class="feedback"></div>
+
+        </div>
+
+
+        <div class="quiz-controls">
+
+            <div class="score-box">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <button id="nextBtn" class="next-btn" disabled>
+                NEXT QUESTION →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULT -->
+    <section id="resultSection" class="result-card hidden">
+
+        <div class="result-icon">🏆</div>
+
+        <p class="eyebrow">CHALLENGE COMPLETED</p>
+
+        <h1>Technology Mastery</h1>
+
+        <div class="result-score">
+            <strong id="finalScore">0</strong>
+            <span>/ 50</span>
+        </div>
+
+        <div class="result-percent" id="percentage">
+            0%
+        </div>
+
+        <h2 id="resultTitle">
+            Keep Learning!
+        </h2>
+
+        <p id="resultMessage"></p>
+
+        <div class="result-stats">
+
+            <div>
+                <span>Correct</span>
+                <b id="correctCount">0</b>
+            </div>
+
+            <div>
+                <span>Wrong</span>
+                <b id="wrongCount">0</b>
+            </div>
+
+            <div>
+                <span>Accuracy</span>
+                <b id="accuracy">0%</b>
+            </div>
+
+        </div>
+
+        <button id="restartBtn" class="primary-btn">
+            🔄 TRY AGAIN
+        </button>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <span>© 2026 TECHMIND</span>
+    <span>Learn • Think • Innovate • Master</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
